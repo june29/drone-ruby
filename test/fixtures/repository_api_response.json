@@ -1,0 +1,18 @@
+{
+  "remote": "github.com",
+  "host": "github.com",
+  "owner": "foo",
+  "name": "bar",
+  "url": "https:\/\/github.com\/foo\/bar",
+  "clone_url": "git@github.com:bradrydzewski\/ami-utils.git",
+  "git_url": "git:\/\/github.com\/foo\/bar.git",
+  "ssh_url": "git@github.com:foo\/bar.git",
+  "active": false,
+  "private": true,
+  "privileged": false,
+  "post_commits": false,
+  "pull_requests": false,
+  "timeout": 900,
+  "created_at": 1413339970,
+  "updated_at": 1413339970
+}
