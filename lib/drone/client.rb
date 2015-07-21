@@ -31,13 +31,8 @@ module Drone
       Repository.build_with_hash(response)
     end
 
-    def commits(repos: nil, branch: nil)
-      url =
-        if branch.nil?
-          "#{base_url}/repos/#{repos.path}/commits"
-        else
-          "#{base_url}/repos/#{repos.path}/branches/#{branch}/commits"
-        end
+    def commits(repos: nil)
+      url = "#{base_url}/repos/#{repos.path}/commits"
 
       response = get_json(url)
       response.map { |commit| Commit.build_with_hash(commit) }
